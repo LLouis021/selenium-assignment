@@ -11,15 +11,15 @@ public class CookieTest extends BaseTest {
         driver.get(baseUrl);
 
 
-        Cookie testCookie = new Cookie("student_grade", "max_score_5");
+        Cookie testCookie = new Cookie("grade", "max_5");
         driver.manage().addCookie(testCookie);
 
-        Cookie retrievedCookie = driver.manage().getCookieNamed("student_grade");
+        Cookie retrievedCookie = driver.manage().getCookieNamed("grade");
         Assertions.assertNotNull(retrievedCookie, "Cookie was not added!");
-        Assertions.assertEquals("max_score_5", retrievedCookie.getValue());
+        Assertions.assertEquals("max_5", retrievedCookie.getValue());
 
 
-        driver.manage().deleteCookieNamed("student_grade");
-        Assertions.assertNull(driver.manage().getCookieNamed("student_grade"), "Cookie was not deleted!");
+        driver.manage().deleteCookieNamed("grade");
+        Assertions.assertNull(driver.manage().getCookieNamed("grade"), "Cookie was not deleted!");
     }
 }
