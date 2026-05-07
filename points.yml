@@ -8,7 +8,7 @@
 # ============================================================
 
 student:
-  website_under_test: "https://parabank.parasoft.com/parabank/index.htm"
+  website_under_test: "https://parabank.parasoft.com/parabank/"
     
     
 # ----------------------------------------------------------
