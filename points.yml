@@ -27,8 +27,7 @@ The most valuable help was in debugging: when my tests passed with the UI open b
 failed in headless mode, Gemini explained how to inject a real User-Agent and window-size 
 to prevent the server from blocking the automated browser. 
 Finally, I used it to learn and implement advanced JUnit 5 features,
-such as creating a custom TestWatcher for automatic screenshots and using @TestMethodOrder
-to handle test dependencies."
+such as creating a custom TestWatcher for automatic screenshots and using @TestMethodOrderto handle test dependencies."
     # e.g. "Used Claude to generate initial Page Object
     #  classes, then modified them manually. Used Copilot
     #  for autocomplete while writing test methods."
